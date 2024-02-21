@@ -259,7 +259,9 @@ img {
 
 .second-section-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .visually-hidden {
@@ -276,12 +278,12 @@ img {
 }
 
 .second-section-list-item {
-  width: calc((100% - 72px) / 4);
-  gap: 24px;
+  /* width: calc((100% - 72px) / 4);
+  gap: 24px; */
 }
 
 .second-section-list-icon {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
@@ -289,24 +291,104 @@ img {
   background: #f4f4fd;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: none;
 }
 
 .head-features {
   color: #2e2f42;
-  font-size: 20px;
+  /* font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 8px; */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
   margin-bottom: 8px;
 }
 
 .features {
   color: #434455;
   font-size: 16px;
-  font-weight: 400;
+  /* font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.32px; */
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .second-section-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 72px;
+    padding: 96 0;
+  }
+
+  .second-section-list-item {
+    width: calc((100% - 72px) / 2);
+  }
+
+  .head-features {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: left;
+  }
+
+  .features {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .second-section-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .second-section-list-icon {
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .second-section-list-item {
+    width: calc((100% - 72px) / 4);
+    gap: 24px;
+  }
+
+  .head-features {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .features {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 }
 
 /*!=========THIRD SECTION========!*/
