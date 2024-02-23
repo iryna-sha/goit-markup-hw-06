@@ -195,7 +195,7 @@
           <li class="team-item">
             <img
               class="team-item-img"
-              srcset="/images/imgtwo.jpg 1x, ./images/two-2x.jpg 2x"
+              srcset="./images/imgtwo.jpg 1x, ./images/tom-2x.jpg 2x"
               src="./images/imgtwo.jpg"
               alt="Picture of a smiling man in a shirt"
               width="264" />
@@ -413,13 +413,18 @@
             <li class="portfolio-img-list-item">
               <div class="overlay">
                 <picture>
+                   <source
+                   media="(max-width: 767px)"
+                   srcset="./images/bank-mob-1x.jpg 1x, ./images/bank-mob-2x.jpg 2x">
                   <source
-                    media="(max-width:767px)"
-                    srcset="./images/bank-tab-1x.jpg 1x, ./images/bank-tab-2x.jpg 2x,">
+                    media="(min-width: 768px)"
+                    srcset="./images/bank-tab-1x.jpg 1x, ./images/bank-tab-2x.jpg 2x">
+                    <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/bank-desk-1x.jpg 1x, ./images/bank-desk-2x.jpg 2x">
                 <img
                   class="portfolio-img"
-                  srcset="./images/bank-mob-1x.jpg 1x, ./images/bank-mob-2x.jpg 2x"
-                  src="./images/portfolio1.jpg"
+                  src="./images/bank-desk-1x.jpg"
                   alt="Application interface"
                   width="360" />
                   </picture>
@@ -438,11 +443,16 @@
               <div class="overlay">
                 <picture>
                   <source
-                    media="(max-width:767px)"
-                    srcset="/images/cashless-tab-1x.jpg 1x, /images/cashless-tab-2x.jpg 2x,">
+                   media="(max-width: 767px)"
+                   srcset="./images/cashless-mob-1x.jpg 1x, ./images/cashless-mob-2x.jpg 2x,">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/cashless-tab-1x.jpg 1x, /images/cashless-tab-2x.jpg 2x">
+                    <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/cashless-desk-1x.jpg 1x, ./images/cashless-desk-2x.jpg 2x">
                 <img
                   class="portfolio-img"
-                  srcset="./images/cashless-mob-1x.jpg 1x, ./images/cashless-mob-2x.jpg 2x,"
                   src="./images/portfolio2.jpg"
                   alt="Cashless Payment"
                   width="360" />
